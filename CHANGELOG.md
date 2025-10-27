@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.0 (2025-10-27)
+
+
+### Features
+
+* **nginx:** make design clean ([3219786](https://github.com/lorenzboss/m324_nginx_test/commit/32197860a5d6b60525fb1374ad27204ca85c004f))
+* **nginx:** show some magic ([76a07d6](https://github.com/lorenzboss/m324_nginx_test/commit/76a07d625abb12b64869a5be9cf920f48b524338))
+
+
+### Bug Fixes
+
+* Comment out force_delete in aws_ecr_repository ([ed22369](https://github.com/lorenzboss/m324_nginx_test/commit/ed223691cb81c5155500a008907c2a6c500b6d8c))
+
 ## [1.3.0](https://github.com/herrhodel/modul-324-muster/compare/v1.2.3...v1.3.0) (2025-08-08)
 
 
