@@ -1,16 +1,77 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Page</title>
-  <link href="css/style.css" rel="stylesheet" />
+  <title>Meine Seite</title>
+  <style>
+    :root {
+      --bg-color: #f9fafb;
+      --text-color: #1f2937;
+      --accent-color: #3b82f6;
+      --max-width: 700px;
+      --radius: 1rem;
+      --shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 1.5rem;
+      color: var(--accent-color);
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      letter-spacing: 0.5px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Hallo auf meiner Seite</h1>
-  <img src="https://i.pinimg.com/originals/90/70/32/9070324cdfc07c68d60eed0c39e77573.gif" alt="Image">
+  <h1>👋 Hallo auf meiner Seite</h1>
+  <img src="https://i.pinimg.com/originals/90/70/32/9070324cdfc07c68d60eed0c39e77573.gif" alt="Lustiges GIF" />
+  <footer>© 2025 Meine Seite</footer>
 </body>
 
 </html>
